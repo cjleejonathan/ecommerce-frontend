@@ -1,0 +1,132 @@
+.container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  "Name Name Name . . . . . Status Status Status"
+  "Price Price Price . . . . . Status Status Status"
+  "Picture Picture Picture Picture Picture Picture Picture Picture Picture Picture Picture"
+  "Picture Picture Picture Picture Picture Picture Picture Picture Picture Picture Picture"
+  "Picture Picture Picture Picture Picture Picture Picture Picture Picture Picture Picture"
+  "Picture Picture Picture Picture Picture Picture Picture Picture Picture Picture Picture"
+  "Picture Picture Picture Picture Picture Picture Picture Picture Picture Picture Picture"
+  "Picture Picture Picture Picture Picture Picture Picture Picture Picture Picture Picture"
+  "Picture Picture Picture Picture Picture Picture Picture Picture Picture Picture Picture"
+  "Owner Owner Owner Owner . . . . Date-created Date-created Date-created"
+  "Owner Owner Owner Owner . . . . Last-updated Last-updated Last-updated";
+  width: 800px;
+  height: 600px;
+}
+
+.Picture {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  ".";
+  grid-area: Picture;
+  width: 100%;
+  height: 100%;
+}
+
+.Date-created {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  ".";
+  grid-area: Date-created;
+  width: 100%;
+  height: 100%;
+}
+
+.Last-updated {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  ".";
+  grid-area: Last-updated;
+  width: 100%;
+  height: 100%;
+}
+
+.Name {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  ".";
+  grid-area: Name;
+  width: 100%;
+  height: 100%;
+}
+
+.Price {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  ".";
+  grid-area: Price;
+  width: 100%;
+  height: 100%;
+}
+
+.Status {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  ".";
+  grid-area: Status;
+  width: 100%;
+  height: 100%;
+}
+
+.Owner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  ".";
+  grid-area: Owner;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 5px black;
+  padding: 20px;
+  margin: 30px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textStyle {
+  font-family: cursive;
+}

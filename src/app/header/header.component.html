@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-light" href="http://localhost:4200">Shopping</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-light" routerLink="/" routerLinkActive="active-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-light" routerLink="/products" routerLinkActive="active-link">Product list</a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="isAuthenticated" class="nav-link text-light" routerLink="/special-offer" routerLinkActive="active-link">Special Offer</a>
+        </li>
+        <li class="nav-item">
+          <a *ngIf="isAuthenticated" class="nav-link text-light" routerLink="/add-item" routerLinkActive="active-link">Sell An Item</a>
+        </li>
+      </ul>
+
+      <button *ngIf="!isAuthenticated" class="btn btn-light" routerLink="/login">Login</button>
+
+      <li *ngIf="isAuthenticated" class="fw-bold text-light">Welcome! {{ email }} </li>
+      <button *ngIf="isAuthenticated" (click)="logout()" class="btn btn-light pl-5"> LogOut </button>
+
+    </div>
+  </div>
+</nav>
+

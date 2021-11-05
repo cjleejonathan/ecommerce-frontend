@@ -1,0 +1,23 @@
+<div class="row center">
+  <div class="col-xs-12">
+    <div
+      class="container content center textStyle"
+      *ngFor="let tempProduct of products; let i = index"
+    >
+      <div div class="Picture">
+        <img src="assets\images\Demo-5.jpg" alt="image" class="img-responsive" width="100%" height="80%" />
+      </div>
+      <div class="Name">Name: {{ tempProduct.name }}</div>
+      <div class="Date-created">Created date: {{ tempProduct.dateCreated | date}}</div>
+      <div class="Last-updated">Updated date: {{ tempProduct.lastUpdated | date}}</div>
+      <div class="Owner">Contact Email: {{ tempProduct.member}}</div>
+      <div class="Price">Price: {{ tempProduct.price }}</div>
+      <div class="Status">
+        <td>
+          <span *ngIf="tempProduct.active === true">Status:selling</span>
+          <span *ngIf="tempProduct.active === false">Status:sold</span>
+        </td>
+      </div>
+    </div>
+  </div>
+</div>
