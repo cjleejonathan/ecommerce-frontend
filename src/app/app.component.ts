@@ -10,5 +10,5 @@ import { OktaAuth } from '@okta/okta-auth-js';
 export class AppComponent {
 
 
-  title = 'frontEnd';
+  title = 'Shopping';
 }
